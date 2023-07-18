@@ -1,0 +1,148 @@
+/* main.css */
+
+/* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  /* Basic styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+  }
+  
+  .logo img{
+    width: 45px;
+    border-radius: 50%;
+  }
+  
+  
+  main {
+    max-width: 600px;
+    margin: 0 auto;
+    background-image: linear-gradient(10deg , rgb(245, 239, 239) 0% ,rgb(6, 132, 6) 78% );
+    padding: 20px;
+    border: 3px solid rgb(222, 238, 99);
+    /* background-color: rgb(249, 248, 246); */
+  }
+
+  
+  
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    color: wheat;
+    /* background-image: linear-gradient(rgb(237, 128, 128),rgb(230, 230, 118)); */
+  }
+  
+  .profile-details p{
+    display:flex;
+    justify-content:center;
+    font-size: 18px;
+    margin-top: 15px;
+  }
+
+  
+  .profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8%;
+    object-fit: cover;
+    margin-top: 10px;
+  }
+
+  table{
+    border: 2px solid rgb(165, 209, 32);
+  }
+
+  #direction ,#mail {
+    border-left: 2px solid rgb(204, 204, 241);
+  }
+
+  #call , #direction , #mail{
+    background-color: #416c0e;
+    color: rgb(211, 230, 3);
+    cursor: pointer;
+    
+  }
+
+  .data-img img{
+    height: 350px;
+    margin: 25px 23.5%;
+  }
+  
+  .profile-bio {
+    padding:15px;
+    text-align: center;
+    color: wheat;
+  }
+
+  .social-work{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 30%;
+  }
+
+  .social-work img{
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+  }
+
+  .address{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color: rgb(17, 17, 16);
+  }
+
+  .social-icons{
+    margin-top: 10px;
+    display: flex;
+    
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .icon{
+    display: inline-block;
+    background-size: cover;
+    margin: 10px;
+    transition: transform 0.5s ease-in-out;
+  }
+  .icon img{
+    height: 30px;
+    width: 30px;
+  }
+
+  .icon :hover{
+    transform: scale(1.5);
+  }
+  
+  footer {
+    /* background-color: #fcfbfb; */
+    color: #0a0a0a;
+    padding: 10px;
+    text-align: center;
+    
+  }
+
+  .addOn button{
+    display:contents;
+    color: rgb(222, 98, 37);
+  }
+  .addOn{
+    float: right;
+    font-size: 45px; 
+  }
+
+  
+  
+ 
+  

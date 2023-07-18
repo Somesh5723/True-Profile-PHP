@@ -1,0 +1,211 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set box-sizing property */
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  /* Set a base font size and family */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  /* Style the header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #27520a;
+    padding: 10px;
+  }
+  
+  .logo{
+    display: flex;
+    align-items: center;
+  }
+  .logo h2{
+    margin: 10px;
+    color: azure;
+    font-size: 20px;
+  }
+
+  .logo img{
+    width: 45px;
+    border-radius: 50%;
+  }
+
+  nav{
+    height: 30px;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-top: 13px;
+    justify-content: center;
+
+
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  nav ul li a:hover{
+    color:rgb(192, 220, 98) ;
+  }
+  
+  /* Style the main content section */
+  main {
+    padding: 20px;
+    background-image: linear-gradient(10deg , rgb(245, 239, 239) 0% ,rgb(6, 132, 6) 78% );
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: cursive;
+  }
+
+  .company-img{
+    justify-content: center;
+    display: flex;
+  }
+  .company-img img{
+   
+    width: 200px;
+    border-radius: 5px;
+  }
+
+  .carousel-item img{
+    height: 60vh;
+  }
+
+  p{
+    margin: 20px;
+    padding: 15px;
+    font-size: 20px;
+    font-family: serif;
+    display: flex;
+    text-align: center;
+  }
+
+
+  #services {
+    text-align: center;
+    padding: 50px 0;
+  }
+  .services h2{
+    font-family: serif;
+
+  }
+  
+  .service {
+    display: inline-block;
+    margin: 0 20px;
+  }
+  
+  .service img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  /* testimonial */
+
+  .testimonial-section {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .testimonial-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .testimonial {
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .testimonial img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial p {
+    font-style: italic;
+    color: #777;
+  }
+  
+  
+  
+  
+
+
+  .social-icons{
+    margin-top: 10px;
+    display: flex;
+    
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .icon{
+    display: inline-block;
+    background-size: cover;
+    margin: 10px;
+    transition: transform 0.5s ease-in-out;
+  }
+  .icon img{
+    height: 30px;
+    width: 30px;
+  }
+
+  .icon :hover{
+    transform: scale(1.5);
+  }
+  /* Style the footer */
+  footer {
+    background-color: #27520a;
+    color: #fff;
+  }
+
+  footer p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
