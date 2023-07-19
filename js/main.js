@@ -54,48 +54,66 @@ contactInput.addEventListener('input', function() {
   }
 
 
-
-
-
-function registerUser() {
-    // Get the input values from the registration form
-    const username = document.getElementById('username').value;
-    const email  = document.getElementById('email').value;
-    const avatar = document.getElementById('avatar').file;
-    const password = document.getElementById('password').value;
-    const confirmPassword = document.getElementById('confirm-password').value;
+  document.addEventListener('DOMContentLoaded', function() {
+    var registrationForm = document.getElementById('register-form');
     
-    // Perform validation on the input values (e.g., check for empty fields, password strength, etc.)
-    // ...
-    function checkPassword(){
-      if(password === confirmPassword){
-        // password match redirect user to their profile
-        window.location.href = "profile.html"
-      }else{
-        alert("Password do not match")
+    registrationForm.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the form from submitting normally
+      
+      var formData = new FormData(registrationForm); // Create a new FormData object from the form
+
+
+      const username = document.getElementById('username').value;
+      const email  = document.getElementById('email').value;
+      const avatar = document.getElementById('avatar').file;
+      const contact = document.getElementById('contact').value;
+      const location = document.getElementById('location').value;
+      const password = document.getElementById('password').value;
+      const confirmPassword = document.getElementById('confirm-password').value;
+
+      function checkPassword(){
+        if(password === confirmPassword){
+          // password match redirect user to their profile
+          window.location.href = "profile.html"
+        }else{
+          alert("Password do not match")
+        }
       }
-    }
-    
-  
-    // Make a POST request to the backend API to register the user
-    fetch('/api/register', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ username, password }),
-    })
-      .then(response => response.json())
-      .then(data => {
-        // Handle the response from the server (e.g., display success message, redirect to login page, etc.)
-        // ...
+      
+      fetch('/save-registration-data', {
+        method: 'POST',
+        body: formData
       })
-      .catch(error => {
-        // Handle any errors that occur during the request
-        // ...
+      .then(function(response) {
+        if (response.ok) {
+          checkPassword();
+          console.log('Data saved successfully!');
+          // Handle success response
+          // You can perform any additional actions here, such as showing a success message or redirecting to another page
+        } else {
+          console.error('Error saving data:', response.status);
+          // Handle error response
+          // You can perform any additional error handling here, such as showing an error message to the user
+        }
+      })
+      .catch(function(error) {
+        console.error('Error saving data:', error);
+        // Handle error response
+        // You can perform any additional error handling here, such as showing an error message to the user
       });
-  }
+    });
+  });
   
+
+
+
+
+
+
+
+
+
+
   // Function to handle user login
   function loginUser() {
     // Get the input values from the login form

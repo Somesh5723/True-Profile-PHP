@@ -52,12 +52,14 @@ body, ul {
     width: 150px;
     height: 150px;
     border-radius: 8%;
+    border: 2px solid black;
     object-fit: cover;
     margin-top: 10px;
   }
 
   table{
     border: 2px solid rgb(165, 209, 32);
+    height: 40px;
   }
 
   #direction ,#mail {
@@ -65,10 +67,13 @@ body, ul {
   }
 
   #call , #direction , #mail{
-    background-color: #416c0e;
-    color: rgb(211, 230, 3);
+    background-color: #13580b;
+    /* color: rgb(211, 230, 3); */
     cursor: pointer;
-    
+  }
+
+  table tr th img{
+    width: 20px;
   }
 
   .data-img img{
@@ -91,8 +96,9 @@ body, ul {
 
   .social-work img{
     width: 200px;
-    height: 150px;
+    height: 230px;
     margin: 10px;
+    border: 2px solid yellowgreen;
   }
 
   .address{
