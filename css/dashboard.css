@@ -80,11 +80,30 @@
   section {
     margin-bottom: 20px;
   }
-  
+  .heading h2{
+    text-align: center;
+    margin-top: 35px;
+    font-size: 35px;
+    font-family:'Lumanosimo', cursive;
+    color: rgb(237, 231, 227);
+  }
   h1 {
     font-size: 24px;
     margin-bottom: 10px;
     font-family: cursive;
+  }
+
+  .carousel{
+    margin: 45px 25px 15px 25px;
+  }
+  .carousel img{
+    opacity: 0.7;
+    border-radius: 55px 0px ;
+  }
+
+  .company-details p{
+    text-align: center;
+    justify-content: center;
   }
 
   .company-img{
@@ -111,7 +130,7 @@
   }
 
 
-  #services {
+  /* #services {
     text-align: center;
     padding: 50px 0;
   }
@@ -128,13 +147,61 @@
   .service img {
     width: 100px;
     height: 100px;
+  } */
+
+  /* why choose us */
+
+  .choose-us-section {
+    text-align: center;
+    margin-top: 60px;
+    padding: 50px 0;
   }
+  .choose-us-section h2{
+    font-family: "Ysabeau sc";
+  }
+  
+  .choose-us-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .choose-us {
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .choose-us img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /* object-fit: cover; */
+    margin-bottom: 20px;
+  }
+  
+  .choose-us h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  
+
+
+
   
   /* testimonial */
 
   .testimonial-section {
     text-align: center;
+    margin-top: 100px;
     padding: 50px 0;
+  }
+
+  .testimonial-section h2{
+    font-family: "Ysabeau sc";
   }
   
   .testimonial-container {
@@ -152,8 +219,8 @@
   }
   
   .testimonial img {
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 180px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;

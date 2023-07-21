@@ -6,12 +6,15 @@
   <title>User Dashboard</title>
   <link rel="stylesheet" href="css/dashboard.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lumanosimo&family=Montserrat:wght@500&family=Roboto+Condensed&family=Varela+Round&display=swap" rel="stylesheet">
   
 </head>
 <body>
   <header>
     <div class="logo">
-      <img src="./images/logo.jpg" alt="">
+      <img src="./images/logo.png" alt="">
       <h2>True Profile</h2>
     </div>
 
@@ -27,18 +30,23 @@
   </header>
 
   <main>
+
+    <div class="heading">
+      <h2>Boost your online presence with verified social profiles</h2>
+    </div>
+    
     <section>
 
       <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./images/logo.jpg" class="d-block w-100" alt="...">
+            <img src="./images/carousel1.jpeg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="./images/logo.jpg" class="d-block w-100" alt="...">
+            <img src="./images/carousel2.jpeg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="./images/logo.jpg" class="d-block w-100" alt="...">
+            <img src="./images/carousel3.jpeg" class="d-block w-100" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"      data-bs-slide="prev">
@@ -51,7 +59,15 @@
         </button>
       </div>
       <br><br>
-      <p>
+      <!-- Display user's uploaded data here -->
+    </section>
+
+    <section class="company-details">
+      <p style="font-size:40px; font-family: Lumanosimo; color: bisque;">
+        Establish credibility and gain trust with a verified social profile. Join our platform and enhance your online presence
+      </p>
+      <br>
+      <p style="font-size:20px; font-family: Ysabeau sc; color: rgb(3, 14, 24);">
           Join the trusted social media network.
           Connect with real people and build your reputation as an authentic user.
 
@@ -65,46 +81,67 @@
           TrueProfile prioritizes the privacy and security of its users by using advanced security features to protect personal information and prevent data breaches.
 
           Keep your social media safe with Aadhaar card verification.
-          Protect your privacy by verifying your social media accounts with your Aadhaar card.
+          Protect your privacy by verifying your social media accounts with your Aadhaar card(Coming soon).
       </p>
-      <!-- Display user's uploaded data here -->
     </section>
 
-    <!-- services -->
-    <section id="services">
-      <h2><u><i>Our Services</i></u></h2><br><br>
-      <div class="service">
-        <img src="./images/logo.jpg" alt="Service 1">
-        <h3>Service 1</h3>
-        <p>Lorem ipsum dolor sit amet</p>
-      </div>
-      <div class="service">
-        <img src="./images/logo.jpg" alt="Service 2">
-        <h3>Service 2</h3>
-        <p>Lorem ipsum dolor sit amet</p>
-      </div>
-      <div class="service">
-        <img src="./images/logo.jpg" alt="Service 3">
-        <h3>Service 3</h3>
-        <p>Lorem ipsum dolor sit amet</p>
+    <!-- why choose us -->
+
+    <section class="choose-us-section">
+      <h2>Why choose us..!!</h2><br><br>
+      <div class="choose-us-container">
+        
+        <div class="choose-us">
+          <img src="./images/feature1.jpeg" alt="feature 1">
+          <h3>Build Trust with Your Audience</h3>
+        </div>
+
+        <div class="choose-us">
+          <img src="./images/feature2.jpeg" alt="feature 2">
+          <h3>Establish Credibility</h3>
+        </div>
+
+
+        <div class="choose-us">
+          <img src="./images/feature3.webp" alt="feature 1">
+          <h3>Enhance Your Online Presence</h3>
+        </div>
+
+        
+        <!-- Add more testimonial divs for additional users -->
       </div>
     </section>
+
+    
 
     <!-- testimonial -->
 
     <section class="testimonial-section">
-      <h2>Our Users</h2><br><br>
+      <h2>Our User's feedback</h2><br><br>
       <div class="testimonial-container">
+
         <div class="testimonial">
-          <img src="./images/Somesh2.png" alt="User 1">
-          <h3>Somesh Yadav</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec ex sed lectus pulvinar pellentesque. Duis maximus risus vel malesuada viverra.</p>
-        </div>
-        <div class="testimonial">
-          <img src="./images/pic2.jpg" alt="User 2">
+          <img src="./images/review0.jpg" alt="User 1">
           <h3>Tejas Nashte</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec ex sed lectus pulvinar pellentesque. Duis maximus risus vel malesuada viverra.</p>
+          <p>True Profile made it easy for me to verify my social profiles. Now I feel more confident in my online presence</p>
         </div>
+
+        <div class="testimonial">
+          <img src="./images/review1.jpg" alt="User 2">
+          <h3>Amrendra Yadav</h3>
+          <p>
+            Thanks to True Profile, I was able to establish trust with my audience and gain more followers. It's a game-changer for my online presence.
+          </p>
+        </div>
+
+
+        <div class="testimonial">
+          <img src="./images/review2.jpg" alt="User 1">
+          <h3>Siddhant Verma</h3>
+          <p>I've seen a significant increase in job opportunities after verifying my social profiles with True Profile . Highly recommended!</p>
+        </div>
+
+        
         <!-- Add more testimonial divs for additional users -->
       </div>
     </section>
