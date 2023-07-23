@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    
   }
   
   /* Set box-sizing property */
@@ -17,13 +18,14 @@
   body {
     font-family: Arial, sans-serif;
     font-size: 16px;
+    
   }
   
   /* Style the header */
   header {
     display: flex;
     justify-content: space-between;
-    background-color: #27520a;
+    background-color: #010c24;
     padding: 10px;
   }
   
@@ -74,7 +76,8 @@
   /* Style the main content section */
   main {
     padding: 20px;
-    background-image: linear-gradient(10deg , rgb(245, 239, 239) 0% ,rgb(6, 132, 6) 78% );
+    /* background-image: url(./images/bgImgtry.jpg); */
+    background-image: linear-gradient(0deg,rgb(187, 187, 223) 10% , rgb(5, 24, 65) 78%);
   }
   
   section {
@@ -83,9 +86,9 @@
   .heading h2{
     text-align: center;
     margin-top: 35px;
-    font-size: 35px;
+    font-size: 2rem;
     font-family:'Lumanosimo', cursive;
-    color: rgb(237, 231, 227);
+    color: rgb(187, 199, 212);
   }
   h1 {
     font-size: 24px;
@@ -158,6 +161,8 @@
   }
   .choose-us-section h2{
     font-family: "Ysabeau sc";
+    color: #0b0522;
+    font-size: 35px;
   }
   
   .choose-us-container {
@@ -170,6 +175,7 @@
   }
   
   .choose-us {
+    height: 500px;
     max-width: 300px;
     text-align: center;
   }
@@ -184,9 +190,14 @@
   
   .choose-us h3 {
     font-size: 1.2rem;
+    font-family: cursive;
     margin-bottom: 10px;
+    color: rgb(47, 4, 135);
   }
-  
+  .choose-us p {
+    font-style: italic;
+    color: #d6d3df;
+  }
   
 
 
@@ -202,6 +213,8 @@
 
   .testimonial-section h2{
     font-family: "Ysabeau sc";
+    color: #0b0522;
+    font-size: 35px;
   }
   
   .testimonial-container {
@@ -214,6 +227,7 @@
   }
   
   .testimonial {
+    height: 500px;
     max-width: 300px;
     text-align: center;
   }
@@ -229,11 +243,12 @@
   .testimonial h3 {
     font-size: 1.2rem;
     margin-bottom: 10px;
+    color:rgb(56, 23, 94);
   }
   
   .testimonial p {
     font-style: italic;
-    color: #777;
+    color: #390ef6;
   }
   
   
@@ -265,7 +280,7 @@
   }
   /* Style the footer */
   footer {
-    background-color: #27520a;
+    background-color: #010c24;
     color: #fff;
   }
 
