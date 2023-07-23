@@ -15,7 +15,7 @@ body, ul {
   }
   
   .logo img{
-    width: 45px;
+    width: 50px;
     border-radius: 50%;
   }
   
@@ -23,7 +23,7 @@ body, ul {
   main {
     max-width: 600px;
     margin: 0 auto;
-    background-image: linear-gradient(10deg , rgb(245, 239, 239) 0% ,rgb(6, 132, 6) 78% );
+    background-image: linear-gradient(0deg,rgb(187, 187, 223) 10% , rgb(5, 24, 65) 78%);
     padding: 20px;
     border: 3px solid rgb(222, 238, 99);
     /* background-color: rgb(249, 248, 246); */
@@ -52,13 +52,13 @@ body, ul {
     width: 150px;
     height: 150px;
     border-radius: 8%;
-    border: 2px solid black;
+    border: 3.5px solid rgb(101, 126, 182);
     object-fit: cover;
     margin-top: 10px;
   }
 
   table{
-    border: 2px solid rgb(165, 209, 32);
+    border: 2px solid rgb(32, 100, 209);
     height: 40px;
   }
 
@@ -67,7 +67,7 @@ body, ul {
   }
 
   #call , #direction , #mail{
-    background-color: #13580b;
+    background-color: #0d1526;
     /* color: rgb(211, 230, 3); */
     cursor: pointer;
   }
@@ -82,9 +82,10 @@ body, ul {
   }
   
   .profile-bio {
-    padding:15px;
+    padding:20px;
+    margin: 20px;
     text-align: center;
-    color: wheat;
+    color: rgb(237, 221, 191);
   }
 
   .social-work{
@@ -98,7 +99,7 @@ body, ul {
     width: 200px;
     height: 230px;
     margin: 10px;
-    border: 2px solid yellowgreen;
+    border: 4px solid rgb(4, 19, 83);
   }
 
   .address{
@@ -133,7 +134,7 @@ body, ul {
   
   footer {
     /* background-color: #fcfbfb; */
-    color: #0a0a0a;
+    color: #031529;
     padding: 10px;
     text-align: center;
     
@@ -141,13 +142,17 @@ body, ul {
 
   .addOn button{
     display:contents;
-    color: rgb(222, 98, 37);
+    color: rgb(1, 2, 29);
   }
   .addOn{
     float: right;
     font-size: 45px; 
+    transition: transform 0.2s ease-in-out;
   }
 
+  .addOn :hover{
+    transform: scale(1.2);
+  }
   
   
  

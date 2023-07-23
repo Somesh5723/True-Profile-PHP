@@ -169,4 +169,36 @@ contactInput.addEventListener('input', function() {
   });
   
 
-  
+  // Wait for the DOM to be fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+  // Get the video element
+  const videoElement = document.querySelector("video");
+
+  // Function to check if an element is in the viewport
+  function isElementInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  // Function to handle the scroll event
+  function handleScroll() {
+    if (isElementInViewport(videoElement)) {
+      // If the video is in the viewport, play it
+      videoElement.play();
+    } else {
+      // If the video is not in the viewport, pause it
+      videoElement.pause();
+    }
+  }
+
+  // Add a scroll event listener to the window
+  window.addEventListener("scroll", handleScroll);
+
+  // Trigger the handleScroll function once on page load to check the initial state
+  handleScroll();
+});

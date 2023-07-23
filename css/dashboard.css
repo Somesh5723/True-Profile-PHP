@@ -250,12 +250,19 @@
     font-style: italic;
     color: #390ef6;
   }
-  
-  
-  
-  
+ 
+  #likeShare{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-
+  #likeShare img{
+    width: 80vw;
+    height: 60vh;
+    border-radius: 35px 5px 35px 5px;
+    
+  }
   .social-icons{
     margin-top: 10px;
     display: flex;
