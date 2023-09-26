@@ -12,7 +12,7 @@
 
   <div class="container">
     <h1>User Registration</h1>
-    <form id="register-form">
+    <form id="register-form" action="register.php" method="post" enctype="multipart/form-data">
 
       <div class="form-group">
         <label for="username">Username:</label>
@@ -23,10 +23,15 @@
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
       </div>
+
+      <div class="form-group">
+        <label for="designation">Designation:</label>
+        <input type="text" id="designation" name="designation" required>
+      </div>
       
       <div class="form-group">
         <label for="avatar">Avatar:</label>
-        <input type="file" id="avatar" name="avatar" required>
+        <input type="file" id="avatar" name="image_upload" accept="image/*" value="" required>
       </div>
 
       <!-- check number  -->
@@ -47,8 +52,10 @@
       </div>
 
       <div class="form-group">
-        <label for="confirm-password">Confirm Password:</label>
-        <input type="password" id="confirm-password" name="confirm-password" required>
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" onkeyup="check()" required>
+        <br>
+        <span id='message'></span>
       </div>
 
       <div class="form-group">
@@ -69,6 +76,18 @@
         input.value = input.value.slice(0, 10);
       }
     }
+
+    //check password and confirm password are matching or not
+    var check = function() {
+      if (document.getElementById('password').value ==
+        document.getElementById('confirm_password').value) {
+        document.getElementById('message').style.color = 'green';
+        document.getElementById('message').innerHTML = '';
+      } else {
+        document.getElementById('message').style.color = 'red';
+        document.getElementById('message').innerHTML = 'Password and Confirm Password are not same';
+      }
+}
   </script>
 </body>
 </html>

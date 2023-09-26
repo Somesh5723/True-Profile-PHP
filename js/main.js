@@ -3,19 +3,19 @@
 // Function to handle user registration
 
 
-var contactInput = document.getElementById('contact');
-var contactError = document.getElementById('contact-error');
+// var contactInput = document.getElementById('contact');
+// var contactError = document.getElementById('contact-error');
 
-contactInput.addEventListener('input', function() {
-  var contactNumber = contactInput.value;
-  var valid = /^\d{10}$/.test(contactNumber);
+// contactInput.addEventListener('input', function() {
+//   var contactNumber = contactInput.value;
+//   var valid = /^\d{10}$/.test(contactNumber);
   
-  if (valid) {
-    contactError.textContent = '';
-  } else {
-    contactError.textContent = 'Please enter a valid 10-digit contact number.';
-  }
-});
+//   if (valid) {
+//     contactError.textContent = '';
+//   } else {
+//     contactError.textContent = 'Please enter a valid 10-digit contact number.';
+//   }
+// });
 
 // location
 

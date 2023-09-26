@@ -1,6 +1,3 @@
-/* main.css */
-
-/* Reset some default styles */
 body, ul {
     margin: 0;
     padding: 0;
@@ -12,30 +9,33 @@ body, ul {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f2f2f2;
+    background-image: linear-gradient(0deg,rgb(187, 187, 223) 10% , rgb(5, 24, 65) 78%);
+  }
+
+  .logo{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 5px;
   }
   
   .logo img{
     width: 50px;
     border-radius: 50%;
   }
-  
-  
-  main {
-    max-width: 600px;
-    margin: 0 auto;
-    background-image: linear-gradient(0deg,rgb(187, 187, 223) 10% , rgb(5, 24, 65) 78%);
-    padding: 20px;
-    border: 3px solid rgb(222, 238, 99);
-    /* background-color: rgb(249, 248, 246); */
-  }
 
-  
+  .logo #close{
+    text-decoration: none;
+    color: red;
+    /* height: 10px; */
+    font-size: 25px;
+  }
   
   .profile-info {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+    margin: 20px auto;
     color: wheat;
     /* background-image: linear-gradient(rgb(237, 128, 128),rgb(230, 230, 118)); */
   }
@@ -54,7 +54,13 @@ body, ul {
     border-radius: 8%;
     border: 3.5px solid rgb(101, 126, 182);
     object-fit: cover;
-    margin-top: 10px;
+    margin: 10px auto;
+  }
+
+
+  .table-section{
+    max-width: 500px;
+    margin: 5px auto;
   }
 
   table{
@@ -70,36 +76,51 @@ body, ul {
     background-color: #0d1526;
     /* color: rgb(211, 230, 3); */
     cursor: pointer;
+    
   }
 
   table tr th img{
     width: 20px;
   }
 
+  .data-img{
+    width: 270px;
+    margin: 35px auto;
+  }
+
   .data-img img{
     height: 350px;
-    margin: 25px 23.5%;
+    width: 270px;
   }
   
   .profile-bio {
     padding:20px;
-    margin: 20px;
+    margin: 20px auto;
+    max-width: 900px;
     text-align: center;
     color: rgb(237, 221, 191);
   }
 
-  .social-work{
+  
+  #social-work{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    margin-left: 30%;
+    /* max-width: 900px; */
+    margin: 30px auto;
+   
   }
 
-  .social-work img{
-    width: 200px;
-    height: 230px;
+
+  #social-work .s-img>img{
+    width: 250px;
+    height: 300px;
     margin: 10px;
-    border: 4px solid rgb(4, 19, 83);
+    border: 3px solid rgb(4, 19, 83);
+    border-radius: 0 20px 0 20px;
+    
   }
 
   .address{
@@ -107,12 +128,14 @@ body, ul {
     text-align: center;
     flex-direction: column;
     color: rgb(17, 17, 16);
+    font-size: 1.3rem;
+    
+    
   }
 
-  .social-icons{
+  #s-icons{
     margin-top: 10px;
     display: flex;
-    
     justify-content: center;
     cursor: pointer;
   }
@@ -123,11 +146,16 @@ body, ul {
     margin: 10px;
     transition: transform 0.5s ease-in-out;
   }
-  .icon img{
+  /* .s-icons .iconn .icon a img{
+    height: 30px;
+    width: 30px;
+  } */
+
+  #s-icons img{
     height: 30px;
     width: 30px;
   }
-
+ 
   .icon :hover{
     transform: scale(1.5);
   }
@@ -135,25 +163,83 @@ body, ul {
   footer {
     /* background-color: #fcfbfb; */
     color: #031529;
-    padding: 10px;
+    /* padding: 10px; */
     text-align: center;
+    margin: 15px auto;
+    /* width: 500px; */
+    font-size: 18px;
     
+  }
+
+  
+  .add-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin: 10px auto; 
+    margin-bottom: 20px;
+   
   }
 
   .addOn button{
     display:contents;
     color: rgb(1, 2, 29);
   }
+  
+
   .addOn{
-    float: right;
-    font-size: 45px; 
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    font-size: 30px; 
     transition: transform 0.2s ease-in-out;
   }
+
 
   .addOn :hover{
     transform: scale(1.2);
   }
+
+  #upload :hover::after{
+    content: "Upload your Data";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-110%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5px 10px;
+    gap: 2px;
+    border-radius: 5px 5px 0 5px;
+    font-size: 10px;
+    color: #333;
+  }
+
+  #new-register :hover::after{
+    content: "New Registration";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-110%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5px 10px;
+    border-radius: 5px 5px 0 5px;
+    font-size: 10px;
+    color: #333;
+  }
+
+  #whatsappButton :hover::after{
+    content: "Share your Profile";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-110%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5px 10px;
+    border-radius: 5px 5px 0 5px;
+    font-size: 10px;
+    color: #333;
+  }
   
-  
+
  
-  

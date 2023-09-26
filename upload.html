@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Upload Page</title>
+  <title>Upload Data</title>
   <link rel="stylesheet" href="css/upload.css">
 </head>
 <body>
@@ -15,25 +15,25 @@
 
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="profile.html" target="_blank">Profile</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="login.html">Logout</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.php" target="_blank">Profile</a></li>
+        <!-- <li><a href="#">Contact</a></li> -->
+        <li><a href="logout.php">Logout</a></li>
       </ul>
     </nav>
   </header>
 <main>
   <section> 
-    <form id="uploadBio">
+    <form id="uploadBio" action="upload_bio.php" method="post">
       <label for="bio">Bio:</label>
-      <textarea id="caption" name="caption" rows="4" cols="50" placeholder="Enter about Yourself"></textarea>
-      <input type="submit" value="Upload Bio">
+      <textarea id="bio_data" name="bio" rows="4" cols="50" placeholder="Enter about Yourself"></textarea>
+      <input type="submit" value="Upload Bio" id="bio" onclick="clc()">
     </form>
   </section>
 
   <section> 
     <!-- <h2>Social Sites</h2> -->
-    <form id="socialLinks">
+    <form id="socialLinks" action="upload_socialLinks.php" method="post">
       <label for="facebook">Facebook:</label>
       <input type="url" id="facebook" name="facebook" placeholder="Enter your Facebook profile URL">
 
@@ -46,20 +46,32 @@
       <label for="linkedin">LinkedIn:</label>
       <input type="url" id="linkedin" name="linkedin" placeholder="Enter your LinkedIn profile URL">
 
-      <input type="submit" value="Upload Links">
+      <input type="submit" value="Upload Links" id="social_link" onclick="clcc()">
     </form>
   </section>
 
   <section>
-    <h2>You can upload Photos & Videos to your profile</h2>
-    <form id="uploadForm" enctype="multipart/form-data">
+    <h2>You can upload photos to your profile</h2>
+    <form id="uploadForm" action="upload_image.php" method="post" enctype="multipart/form-data">
       <label for="file">Select File:</label>
-      <input type="file" id="file" name="file" accept="image/*, video/*">
+      <input type="file" id="file1" name="file1" accept="image/*" value="" required>
       
-      <label for="caption">Caption:</label>
-      <textarea id="caption" name="caption" rows="4" cols="50"></textarea>
+      <label for="file">Select File:</label>
+      <input type="file" id="file2" name="file2" accept="image/*" value="" required>
+
+      <label for="file">Select File:</label>
+      <input type="file" id="file3" name="file3" accept="image/*" value="" required>
+
+      <label for="file">Select File:</label>
+      <input type="file" id="file4" name="file4" accept="image/*" value="" required>
+
+      <label for="file">Select File:</label>
+      <input type="file" id="file5" name="file5" accept="image/*" value="" required>
       
-      <input type="submit" value="Upload">
+      <!-- <label for="caption">Caption:</label>
+      <textarea id="caption" name="caption" rows="4" cols="50"></textarea> -->
+      
+      <input type="submit" value="Upload" id="upload_image" onclick="clccc()">
     </form>
   </section>
 
@@ -69,5 +81,27 @@
   <p>&copy; 2023 Kal-Pra TechMedia Business Services. All rights reserved.</p>
 </footer>
   <script src="js/main.js"></script>
+  <script>
+    function clc()
+    {
+      var bio=document.getElementById("bio");
+    if(bio)  
+      alert("Your Bio has been successfully submitted. You can see it on your profile.");
+    }
+   
+    function clcc()
+    {
+      var social_link=document.getElementById("social_link");
+    if(social_link)  
+      alert("Your Social Media links has been successfully submitted.");
+    }
+   
+    function clccc()
+    {
+      var upload_image=document.getElementById("upload_image");
+    if(upload_image)  
+      alert("Your image has been successfully submitted.");
+    }
+  </script>
 </body>
 </html>
